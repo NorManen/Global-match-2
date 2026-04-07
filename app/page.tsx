@@ -126,7 +126,19 @@ export default function Page() {
           <div className="space-y-6">
             <div className="rounded-2xl border border-slate-800 bg-slate-900 p-5">
               <h2 className="mb-3 text-lg font-semibold">Upload CVs</h2>
-              <input type="file" multiple accept=".pdf,.docx" onChange={onFiles} className="block w-full text-sm" />
+              <input 
+                type="file" 
+                  multiple 
+                    accept=".pdf,.docx" 
+                      onChange={onFiles} 
+                        className="block w-full text-sm text-slate-400
+                            file:mr-4 file:py-2 file:px-4 
+                                file:rounded-full file:border-0 
+                                    file:text-sm file:font-semibold 
+                                        file:bg-indigo-600 file:text-white 
+                                            hover:file:bg-indigo-700 
+                                                cursor-pointer"
+                                                />
               <p className="mt-3 text-sm text-slate-400">Only .pdf and .docx accepted.</p>
               <p className="mt-1 text-sm text-slate-400">Accepted files: {files.length}</p>
             </div>
